@@ -83,7 +83,7 @@ class _NewItemState extends State<NewItem> {
       return;
     }
 
-    final grocery = Grocery(
+    final Grocery grocery = Grocery(
       name: name,
       quantity: quantity,
       category: _selectedCategory,

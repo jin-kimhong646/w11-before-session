@@ -15,6 +15,7 @@ class _GroceryListState extends State<GroceryList> {
 
   void onCreate() {
     // TODO-4 - Navigate to the form screen using the Navigator push
+    
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => NewItem(onCreate: addGrocery)),
@@ -66,8 +67,7 @@ class GroceryTile extends StatelessWidget {
         decoration: BoxDecoration(color: grocery.category.color),
       ),
       title: Text(grocery.name),
-      subtitle: Text(grocery.quantity.toString()),
-      trailing: const Icon(Icons.drag_handle),
+      trailing:  Text(grocery.quantity.toString()),
     );
   }
 }
